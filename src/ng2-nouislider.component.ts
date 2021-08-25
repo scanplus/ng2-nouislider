@@ -77,6 +77,7 @@ export class NouisliderComponent implements ControlValueAccessor, OnInit, OnChan
   @Input() public onKeydown: any;
   @Input() public formControl: FormControl;
   @Input() public tooltips: Array<any>;
+  @Output() public ngModelChange: EventEmitter<any> = new EventEmitter(true);
   @Output() public change: EventEmitter<any> = new EventEmitter(true);
   @Output() public update: EventEmitter<any> = new EventEmitter(true);
   @Output() public slide: EventEmitter<any> = new EventEmitter(true);
